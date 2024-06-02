@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yTsGK7QoIjJGFJ51e4E/6hgl1zwx2Y/qxmFWaAYs2LI=",
+  "Hash": "APLg2C9QyhAavcwBTaoGSZiwfWOSQoB4fTaS/td5wnM=",
   "Source": "EducalBack",
   "BasePath": "_content/EducalBack",
   "Mode": "Default",
@@ -9707,6 +9707,23 @@
       "OriginalItemSpec": "wwwroot/admin/assets/js/bootstrap.min.js"
     },
     {
+      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/admin/assets/js/custom.js",
+      "SourceId": "EducalBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/",
+      "BasePath": "_content/EducalBack",
+      "RelativePath": "admin/assets/js/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/assets/js/custom.js"
+    },
+    {
       "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/admin/assets/js/index.js",
       "SourceId": "EducalBack",
       "SourceType": "Discovered",
@@ -10098,12 +10115,12 @@
       "OriginalItemSpec": "wwwroot/admin/assets/plugins/sparkline-charts/sparkline-chart-script.js"
     },
     {
-      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/23c7a552-04a5-43a1-898e-920573aaa6c2-product-3.jpg",
+      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/35c63306-8d05-4f40-98ba-27e266e818cf-banner-1.png",
       "SourceId": "EducalBack",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/",
       "BasePath": "_content/EducalBack",
-      "RelativePath": "assets/img/23c7a552-04a5-43a1-898e-920573aaa6c2-product-3.jpg",
+      "RelativePath": "assets/img/35c63306-8d05-4f40-98ba-27e266e818cf-banner-1.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -10112,15 +10129,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/assets/img/23c7a552-04a5-43a1-898e-920573aaa6c2-product-3.jpg"
+      "OriginalItemSpec": "wwwroot/assets/img/35c63306-8d05-4f40-98ba-27e266e818cf-banner-1.png"
     },
     {
-      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/57af718e-a2d8-4500-b767-00b73ecd4e18-product-4.jpg",
+      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/475838c9-ab35-41ce-b76c-eff8f16f161e-banner-2.png",
       "SourceId": "EducalBack",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/",
       "BasePath": "_content/EducalBack",
-      "RelativePath": "assets/img/57af718e-a2d8-4500-b767-00b73ecd4e18-product-4.jpg",
+      "RelativePath": "assets/img/475838c9-ab35-41ce-b76c-eff8f16f161e-banner-2.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -10129,7 +10146,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/assets/img/57af718e-a2d8-4500-b767-00b73ecd4e18-product-4.jpg"
+      "OriginalItemSpec": "wwwroot/assets/img/475838c9-ab35-41ce-b76c-eff8f16f161e-banner-2.png"
+    },
+    {
+      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/a45b24b2-65d0-4857-ba46-4eb6adccef4c-banner-7.jpg",
+      "SourceId": "EducalBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/",
+      "BasePath": "_content/EducalBack",
+      "RelativePath": "assets/img/a45b24b2-65d0-4857-ba46-4eb6adccef4c-banner-7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/img/a45b24b2-65d0-4857-ba46-4eb6adccef4c-banner-7.jpg"
     },
     {
       "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/category-icon-1.jpeg",
@@ -10268,40 +10302,6 @@
       "OriginalItemSpec": "wwwroot/assets/img/category-icon-8.jpeg"
     },
     {
-      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/category-icon-9.jpeg",
-      "SourceId": "EducalBack",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/",
-      "BasePath": "_content/EducalBack",
-      "RelativePath": "assets/img/category-icon-9.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/assets/img/category-icon-9.jpeg"
-    },
-    {
-      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/cba7cc43-3a51-4828-9a01-eeb2589e5f43-product-2.jpg",
-      "SourceId": "EducalBack",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/",
-      "BasePath": "_content/EducalBack",
-      "RelativePath": "assets/img/cba7cc43-3a51-4828-9a01-eeb2589e5f43-product-2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/assets/img/cba7cc43-3a51-4828-9a01-eeb2589e5f43-product-2.jpg"
-    },
-    {
       "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/course-1.jpeg",
       "SourceId": "EducalBack",
       "SourceType": "Discovered",
@@ -10317,23 +10317,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/img/course-1.jpeg"
-    },
-    {
-      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/course-2.jpeg",
-      "SourceId": "EducalBack",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/",
-      "BasePath": "_content/EducalBack",
-      "RelativePath": "assets/img/course-2.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/assets/img/course-2.jpeg"
     },
     {
       "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/course-3.jpeg",
@@ -10402,6 +10385,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/img/course-6.jpeg"
+    },
+    {
+      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/img/f23024b6-65dd-4e58-84e5-4c53f054f11a-banner-4.jpg",
+      "SourceId": "EducalBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/",
+      "BasePath": "_content/EducalBack",
+      "RelativePath": "assets/img/f23024b6-65dd-4e58-84e5-4c53f054f11a-banner-4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/img/f23024b6-65dd-4e58-84e5-4c53f054f11a-banner-4.jpg"
+    },
+    {
+      "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/js/category.js",
+      "SourceId": "EducalBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/",
+      "BasePath": "_content/EducalBack",
+      "RelativePath": "assets/js/category.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/js/category.js"
     },
     {
       "Identity": "/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/wwwroot/assets/js/script.js",

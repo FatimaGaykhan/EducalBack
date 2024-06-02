@@ -8,7 +8,7 @@ namespace EducalBack.Models
 		public decimal Price { get; set; }
 		public int CategoryId { get; set; }
 		public Category Category { get; set; }
-		public ICollection<CourseImage> CourseImages { get; set; }
+		public List<CourseImage> CourseImages { get; set; }
 
 
 	}

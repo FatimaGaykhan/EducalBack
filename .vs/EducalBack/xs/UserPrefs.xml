@@ -1,29 +1,19 @@
 ﻿<Properties StartupConfiguration="{B43B57F7-B47D-4C98-83F3-C93E47DFF713}|Default">
-  <MonoDevelop.Ide.ItemProperties.EducalBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EducalBack/Areas/Admin/Controllers/CourseController.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EducalBack/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="EducalBack/Areas/Admin/Controllers/CategoryController.cs" Line="100" Column="50" />
-      <File FileName="EducalBack/Services/Interfaces/ICategoryService.cs" Line="18" Column="48" />
-      <File FileName="EducalBack/Services/CategoryService.cs" Line="55" Column="61" />
-      <File FileName="EducalBack/Areas/Admin/Views/Category/Index.cshtml" Line="6" Column="58" />
-      <File FileName="EducalBack/Areas/Admin/Views/_ViewImports.cshtml" Line="4" Column="40" />
-      <File FileName="EducalBack/Views/_ViewImports.cshtml" />
-      <File FileName="EducalBack/Areas/Admin/Views/Category/Detail.cshtml" />
-      <File FileName="EducalBack/Areas/Admin/Controllers/CourseController.cs" Line="150" Column="52" />
-      <File FileName="EducalBack/Models/Course.cs" />
-      <File FileName="EducalBack/ViewModels/Courses/CourseVM.cs" />
-      <File FileName="EducalBack/Services/Interfaces/ICourseService.cs" Line="14" Column="35" />
-      <File FileName="EducalBack/Services/CourseService.cs" Line="28" Column="47" />
-      <File FileName="EducalBack/Areas/Admin/Views/Course/Index.cshtml" Line="26" Column="70" />
-      <File FileName="EducalBack/Areas/Admin/Views/Shared/_Layout.cshtml" Line="64" Column="12" />
-      <File FileName="EducalBack/Areas/Admin/Views/Course/Detail.cshtml" Line="5" Column="89" />
-      <File FileName="EducalBack/ViewModels/Courses/CourseDetailVM.cs" Line="14" Column="56" />
-      <File FileName="EducalBack/ViewModels/Courses/CourseImageVM.cs" Line="10" Column="41" />
-      <File FileName="EducalBack/Areas/Admin/Views/Category/Create.cshtml" Line="13" Column="122" />
-      <File FileName="EducalBack/ViewModels/Categories/CategoryCreateVM.cs" Line="13" Column="41" />
-      <File FileName="EducalBack/Helpers/Extensions/FileExtension.cs" Line="35" Column="10" />
-      <File FileName="EducalBack/Areas/Admin/Views/Course/Create.cshtml" Line="32" Column="122" />
-      <File FileName="EducalBack/ViewModels/Courses/CourseCreateVM.cs" Line="20" Column="52" />
+      <File FileName="EducalBack/Areas/Admin/Controllers/CourseController.cs" />
+      <File FileName="EducalBack/Areas/Admin/Views/Course/Edit.cshtml" />
+      <File FileName="EducalBack/Services/Interfaces/ICourseService.cs" />
+      <File FileName="EducalBack/ViewModels/Courses/CourseEditVM.cs" />
+      <File FileName="EducalBack/Services/CourseService.cs" />
+      <File FileName="EducalBack/wwwroot/admin/assets/js/custom.js" />
+      <File FileName="EducalBack/wwwroot/admin/assets/css/app-style.css" />
+      <File FileName="EducalBack/Views/Home/Index.cshtml" Line="153" Column="35" />
+      <File FileName="EducalBack/wwwroot/assets/js/script.js" Line="76" Column="1" />
+      <File FileName="EducalBack/wwwroot/assets/js/category.js" Line="27" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -32,9 +22,7 @@
             <Node name="EducalBack" expanded="True">
               <Node name="Areas" expanded="True">
                 <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="CourseController.cs" selected="True" />
-                  </Node>
+                  <Node name="Controllers" expanded="True" />
                   <Node name="Views" expanded="True">
                     <Node name="Category" expanded="True" />
                     <Node name="Course" expanded="True" />
@@ -54,10 +42,20 @@
                 <Node name="Courses" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="admin" expanded="True" />
+                <Node name="admin" expanded="True">
+                  <Node name="assets" expanded="True">
+                    <Node name="css" expanded="True" />
+                    <Node name="js" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="assets" expanded="True">
+                  <Node name="js" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -66,9 +64,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/Areas/Admin/Controllers/CategoryController.cs" relfile="EducalBack/Areas/Admin/Controllers/CategoryController.cs" line="123" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EducalBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

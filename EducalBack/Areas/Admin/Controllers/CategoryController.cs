@@ -88,7 +88,6 @@ namespace EducalBack.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null) return BadRequest();
@@ -104,6 +103,82 @@ namespace EducalBack.Areas.Admin.Controllers
             await _categoryService.DeleteAsync(category);
 
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id is null) return BadRequest();
+
+            var category = await _categoryService.GetByIdAsync((int)id);
+
+            if (category is null) return NotFound();
+
+            return View(new CategoryEditVM { Name = category.Name, Description = category.Description, Image = category.Image });
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int? id,CategoryEditVM request)
+        {
+            
+
+            if (!ModelState.IsValid)
+            {
+
+                var existCategory = await _categoryService.GetByIdAsync((int)id);
+
+
+                return View(new CategoryEditVM { Image = existCategory.Image });
+            }
+
+            if (id is null) return BadRequest();
+
+            if (await _categoryService.ExistExceptByIdAsync((int)id, request.Name))
+            {
+                ModelState.AddModelError("Name", "This castegory name already exist");
+                return View();
+            }
+
+            var category = await _categoryService.GetByIdAsync((int)id);
+
+            if (category is null) return NotFound();
+
+            if (request.NewImage != null)
+            {
+                if (!request.NewImage.CheckFileType("image/"))
+                {
+                    ModelState.AddModelError("NewImage", "Input can accept only image format");
+                    request.Image = category.Image;
+                    return View(request);
+                }
+
+                if (!request.NewImage.CheckFileSize(200))
+                {
+                    ModelState.AddModelError("NewImage", "Image size  must be max 200KB");
+                    request.Image = category.Image;
+                    return View(request);
+                }
+
+                string oldPath = _env.GenerateFilePath("assets/img", category.Image);
+
+                oldPath.DeleteFileFromLocal();
+
+                string fileName = Guid.NewGuid().ToString() + "-" + request.NewImage.FileName;
+
+
+                string newPath = _env.GenerateFilePath("assets/img", fileName);
+
+                await request.NewImage.SaveFileToLocalAsync(newPath);
+
+                category.Image = fileName;
+            }
+
+            await _categoryService.EditAsync(category, request);
+
+            return RedirectToAction(nameof(Index));
+
         }
     }
 }

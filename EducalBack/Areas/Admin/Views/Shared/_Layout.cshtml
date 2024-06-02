@@ -59,19 +59,19 @@
                 </a>
             </li>
 
-           
 
-           
+
+
             <li>
                 <a asp-area="Admin" asp-controller="Course" asp-action="Index">
                     <i class="zmdi zmdi-grid"></i> <span>Courses</span>
                 </a>
             </li>
-           
 
-            
 
-           
+
+
+
 
             <li class="sidebar-header">LABELS</li>
             <li><a href="javaScript:void();"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>
@@ -153,7 +153,8 @@
     <script src="~/admin/assets/plugins/Chart.js/Chart.min.js"></script>
 
     <!-- Index js -->
-    <script src="~/admin/assets/js/index.js"></script>
+    <script asp-append-version="true" src="~/admin/assets/js/index.js"></script>
+    <script asp-append-version="true" src="~/admin/assets/js/custom.js"></script>
     @RenderSection("Script", required: false)
     @RenderSection("js", required: false)
 

@@ -2,6 +2,7 @@
 using System.Reflection.Metadata;
 using EducalBack.Models;
 using EducalBack.ViewModels;
+using EducalBack.ViewModels.Categories;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EducalBack.Services.Interfaces
@@ -16,6 +17,8 @@ namespace EducalBack.Services.Interfaces
         Task<Category> GetByIdAsync(int id);
         Task DeleteAsync(Category category);
         Task<SelectList> GetAllSelectedAsync();
+        Task<bool> ExistExceptByIdAsync(int id, string name);
+        Task EditAsync(Category category, CategoryEditVM request);
 
     }
 }

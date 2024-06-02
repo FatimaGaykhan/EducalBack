@@ -72,46 +72,52 @@ annuallyBtn.addEventListener("click",(e)=>{
   
 })
 
-buttons.forEach(button=>{
-    button.addEventListener("click",(e)=>{
-        e.preventDefault()
-        if(e.target.classList.contains("all")){
-            cards.forEach(card=>{
-                card.style.display="block"
-            })
-        }else if(e.target.classList.contains("popular")){
-            cards.forEach(card=>{
-                if(card.classList.contains("popular")){
-                    card.style.display="block"
-                }else{
-                    card.style.display="none"
-                }
-            })
-        }else if(e.target.classList.contains("trendingbtn")){
-            cards.forEach(card=>{
-                if(card.classList.contains("trendingCard")){
-                    card.style.display="block"
-                }else{
-                    card.style.display="none"
-                }
-            })
-        }else if(e.target.classList.contains("featured")){
-            cards.forEach(card=>{
-                if(card.classList.contains("featuredCard")){
-                    card.style.display="block"
-                }else{
-                    card.style.display="none"
-                }
-            })
-        }else if(e.target.classList.contains("art")){
-            cards.forEach(card=>{
-                if(card.classList.contains("artCard")){
-                    card.style.display="block"
-                }else{
-                    card.style.display="none"
-                }
-            })
-        }
+
+
+
+
+
+
+//buttons.forEach(button=>{
+//    button.addEventListener("click",(e)=>{
+//        e.preventDefault()
+//        if(e.target.classList.contains("all")){
+//            cards.forEach(card=>{
+//                card.style.display="block"
+//            })
+//        }else if(e.target.classList.contains("popular")){
+//            cards.forEach(card=>{
+//                if(card.classList.contains("popular")){
+//                    card.style.display="block"
+//                }else{
+//                    card.style.display="none"
+//                }
+//            })
+//        }else if(e.target.classList.contains("trendingbtn")){
+//            cards.forEach(card=>{
+//                if(card.classList.contains("trendingCard")){
+//                    card.style.display="block"
+//                }else{
+//                    card.style.display="none"
+//                }
+//            })
+//        }else if(e.target.classList.contains("featured")){
+//            cards.forEach(card=>{
+//                if(card.classList.contains("featuredCard")){
+//                    card.style.display="block"
+//                }else{
+//                    card.style.display="none"
+//                }
+//            })
+//        }else if(e.target.classList.contains("art")){
+//            cards.forEach(card=>{
+//                if(card.classList.contains("artCard")){
+//                    card.style.display="block"
+//                }else{
+//                    card.style.display="none"
+//                }
+//            })
+//        }
         
-    })
-})
+//    })
+//})

@@ -4,6 +4,7 @@ using EducalBack.Data;
 using EducalBack.Models;
 using EducalBack.Services.Interfaces;
 using EducalBack.ViewModels;
+using EducalBack.ViewModels.Categories;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
@@ -39,9 +40,22 @@ namespace EducalBack.Services
                                        
         }
 
+        public async Task EditAsync(Category category, CategoryEditVM request)
+        {
+            category.Name = request.Name;
+            category.Description = request.Description;
+
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<bool> ExistAsync(string name)
         {
             return await _context.Categories.AnyAsync(m => m.Name.Trim() == name.Trim());
+        }
+
+        public async Task<bool> ExistExceptByIdAsync(int id, string name)
+        {
+            return await _context.Categories.AnyAsync(m => m.Name == name && m.Id != id);
         }
 
         public async Task<IEnumerable<Category>> GetAllAsync()

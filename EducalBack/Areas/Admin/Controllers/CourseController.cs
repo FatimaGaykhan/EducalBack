@@ -149,6 +149,128 @@ namespace EducalBack.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            ViewBag.categories = await _categoryService.GetAllSelectedAsync();
+
+            if (id is null) return BadRequest();
+
+            var existCourse = await _courseService.GetByIdWithAllDatasAsync((int)id);
+
+            if (existCourse is null) return NotFound();
+
+
+            return View(new CourseEditVM
+            {
+                Name=existCourse.Name,
+                Description=existCourse.Description,
+                Price=existCourse.Price.ToString().Replace(",","."),
+                CategoryId=existCourse.CategoryId,
+                ExistImages=existCourse.CourseImages.Select(m=>new CourseImageEditVM
+                {
+                    Id=m.Id,
+                    CourseId=m.CourseId,
+                    Image=m.Name,
+                    IsMain=m.IsMain
+                }).ToList()
+            });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int? id,CourseEditVM request)
+        {
+            ViewBag.categories = await _categoryService.GetAllSelectedAsync();
+
+
+            if (id is null) return BadRequest();
+
+
+            var existCourse = await _courseService.GetByIdWithAllDatasAsync((int)id);
+
+            if (existCourse is null) return NotFound();
+
+
+            if (!ModelState.IsValid)
+            {
+                request.ExistImages = existCourse.CourseImages.Select(m => new CourseImageEditVM
+                {
+                    Id = m.Id,
+                    CourseId = m.CourseId,
+                    Image = m.Name,
+                    IsMain = m.IsMain
+                }).ToList();
+
+                return View(request);
+            }
+
+
+            if(request.NewImages !=null)
+            {
+                foreach (var item in request.NewImages)
+                {
+                    if (!item.CheckFileSize(500))
+                    {
+                        request.ExistImages = existCourse.CourseImages.Select(m => new CourseImageEditVM
+                        {
+                            Id = m.Id,
+                            CourseId = m.CourseId,
+                            Image = m.Name,
+                            IsMain = m.IsMain
+                        }).ToList();
+
+
+                        ModelState.AddModelError("NewImages", "Image size must be 500KB");
+                        return View(request);
+                    }
+
+                    if (!item.CheckFileType("image/"))
+                    {
+                        request.ExistImages = existCourse.CourseImages.Select(m => new CourseImageEditVM
+                        {
+                            Id = m.Id,
+                            CourseId = m.CourseId,
+                            Image = m.Name,
+                            IsMain = m.IsMain
+                        }).ToList();
+
+
+
+                        ModelState.AddModelError("NewImages", "File type must be only image ");
+                        return View(request);
+                    }
+                }
+
+
+               
+            }
+
+
+            await _courseService.EditAsync(existCourse, request);
+
+
+            return RedirectToAction(nameof(Index));
+
+        }
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteCourseImage(MainAndDeleteCourseImageVM request)
+        {
+            await _courseService.DeleteCourseImageAsync(request);
+
+            return Ok();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SetMainImage(MainAndDeleteCourseImageVM request)
+        {
+            await _courseService.SetMainCourseImageAsync(request);
+
+            return Ok();
+        }
     }
 }
 

@@ -63,6 +63,24 @@ body {
 [tabindex="-1"]:focus {
 	outline: 0!important
 }
+.show-btn button{
+    opacity:0!important;
+    transition:all 0.5s;
+}
+
+.show-btn:hover button {
+    opacity: 1 !important;
+    transition: all 0.5s;
+}
+
+.hide-btn button{
+    display: none;
+}
+
+
+.is-main-image {
+    border: 5px solid red
+}
 
 ::selection {
   background: rgba(255, 255, 255, 0.2);

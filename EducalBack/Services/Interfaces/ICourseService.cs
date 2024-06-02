@@ -12,6 +12,10 @@ namespace EducalBack.Services.Interfaces
 		Task<Course> GetByIdWithAllDatasAsync(int id);
         Task CreateAsync(Course course);
 		Task DeleteAsync(Course course);
+		Task DeleteCourseImageAsync(MainAndDeleteCourseImageVM data);
+        Task SetMainCourseImageAsync(MainAndDeleteCourseImageVM data);
+		Task EditAsync(Course course,CourseEditVM editCourse);
+
     }
 }
 

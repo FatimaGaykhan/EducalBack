@@ -152,17 +152,19 @@
                 <p>You don't have to struggle alone, you've got our assistance and help.</p>
                 <ul class="tablist">
                     <li class="categoryButton"><a class="all" href="">See All </a></li>
-                    <li class="categoryButton"><a class="popular" href="">Design </a></li>
-                    <li class="categoryButton"><a class="trendingbtn" href="">Development </a></li>
-                    <li class="categoryButton"><a class="featured" href="">SMM </a></li>
-                    <li class="categoryButton"><a class="art" href="">Music </a></li>
+                    @foreach (var item in Model.Categories.Take(5))
+                    {
+                        <li class="categoryButton"><a class="popular" data-id="@item.Id" >@item.Name</a></li>
+
+                    }
+
                 </ul>
             </div>
 
             <div class="cards">
                 @foreach (var item in Model.Courses)
                 {
-                    <div class="card popular featuredCard">
+                    <div class="card popular featuredCard" data-id="@item.CategoryId">
                         <div class="img">
                             <img src="~/assets/img/@item.CourseImages.FirstOrDefault(m=>m.IsMain)?.Name" alt="">
                             <span class="art">@item.Name</span>
