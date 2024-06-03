@@ -63,6 +63,8 @@ namespace EducalBack.Services
 			return await _context.Categories.ToListAsync();
         }
 
+       
+
         public async Task<SelectList> GetAllSelectedAsync()
         {
             var categories = await _context.Categories.ToListAsync();

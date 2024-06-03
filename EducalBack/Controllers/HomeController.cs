@@ -1,7 +1,9 @@
 ﻿using System.Diagnostics;
+using EducalBack.Models;
 using EducalBack.Services.Interfaces;
 using EducalBack.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace EducalBack.Controllers;
 
@@ -27,6 +29,19 @@ public class HomeController : Controller
     
         return View(model);
     }
+
+    //public async Task<IActionResult> GetByIdForCategoryTabMenu(int? id)
+    //{
+    //    //IEnumerable<Course> courses = await _courseService.GetAllAsync();
+
+    //    if (id is null) return BadRequest();
+
+    //    List<Course> courses = await _courseService.GetAllCoursesById((int)id);
+
+    //    if (courses.Count == 0) return NotFound();
+
+    //    return Ok(courses);
+    //}
 
    
 }

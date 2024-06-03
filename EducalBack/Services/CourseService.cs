@@ -106,6 +106,12 @@ namespace EducalBack.Services
             return await _context.Courses.FindAsync(id);
         }
 
+        public async Task<List<Course>> GetAllCoursesById(int id)
+        {
+            return await _context.Courses.Where(m=>m.CategoryId==id)
+                .ToListAsync();
+        }
+
         public async Task<Course> GetByIdWithAllDatasAsync(int id)
         {
             return await _context.Courses.Where(m => m.Id == id)

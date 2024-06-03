@@ -76,6 +76,40 @@ annuallyBtn.addEventListener("click",(e)=>{
 
 
 
+let allCategories = document.querySelectorAll(".categoryButton")
+
+
+let featuredCards = document.querySelectorAll(".featuredCard")
+
+
+
+allCategories.forEach(header => {
+    header.addEventListener("click", function () {
+
+        //console.log(this.getAttribute("data-id"))
+
+        //for (const item of featuredCards) {
+        //    console.log(item.getAttribute("data-id"))
+        //}
+        
+        debugger
+        if (this.getAttribute("data-id") == 0) {
+            for (const item of featuredCards) {
+                item.classList.remove("d-none");
+            }
+        } else {
+            for (const item of featuredCards) {
+                if (item.getAttribute("data-id") == this.getAttribute("data-id")) {
+                    item.classList.remove("d-none");
+                } else {
+                    item.classList.add("d-none");
+                }
+            }
+        }
+    });
+});
+
+
 
 
 //buttons.forEach(button=>{

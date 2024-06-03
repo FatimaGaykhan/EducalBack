@@ -2,18 +2,14 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EducalBack/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EducalBack/wwwroot/assets/js/script.js">
     <Files>
-      <File FileName="EducalBack/Areas/Admin/Controllers/CourseController.cs" />
-      <File FileName="EducalBack/Areas/Admin/Views/Course/Edit.cshtml" />
-      <File FileName="EducalBack/Services/Interfaces/ICourseService.cs" />
-      <File FileName="EducalBack/ViewModels/Courses/CourseEditVM.cs" />
-      <File FileName="EducalBack/Services/CourseService.cs" />
-      <File FileName="EducalBack/wwwroot/admin/assets/js/custom.js" />
-      <File FileName="EducalBack/wwwroot/admin/assets/css/app-style.css" />
-      <File FileName="EducalBack/Views/Home/Index.cshtml" Line="153" Column="35" />
-      <File FileName="EducalBack/wwwroot/assets/js/script.js" Line="76" Column="1" />
-      <File FileName="EducalBack/wwwroot/assets/js/category.js" Line="27" Column="1" />
+      <File FileName="EducalBack/wwwroot/assets/js/script.js" Line="79" Column="63" />
+      <File FileName="EducalBack/Controllers/HomeController.cs" Line="25" Column="10" />
+      <File FileName="EducalBack/Services/CourseService.cs" Line="111" Column="42" />
+      <File FileName="EducalBack/Views/Home/Index.cshtml" Line="157" Column="86" />
+      <File FileName="EducalBack/wwwroot/assets/style.scss" Line="1" Column="1" />
+      <File FileName="EducalBack/Views/Shared/_Layout.cshtml" Line="12" Column="275" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,6 +26,7 @@
                   </Node>
                 </Node>
               </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Helpers" expanded="True">
                 <Node name="Extensions" expanded="True" />
               </Node>
@@ -42,19 +39,17 @@
                 <Node name="Courses" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="admin" expanded="True">
-                  <Node name="assets" expanded="True">
-                    <Node name="css" expanded="True" />
-                    <Node name="js" expanded="True" />
-                  </Node>
-                </Node>
                 <Node name="assets" expanded="True">
-                  <Node name="js" expanded="True" />
+                  <Node name="js" expanded="True">
+                    <Node name="script.js" selected="True" />
+                  </Node>
+                  <Node name="scss" expanded="True">
+                    <Node name="pages" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>

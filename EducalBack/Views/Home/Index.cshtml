@@ -149,19 +149,18 @@
                     </span> for
                     you
                 </h3>
-                <p>You don't have to struggle alone, you've got our assistance and help.</p>
+                <p class="d-none">You don't have to struggle alone, you've got our assistance and help.</p>
                 <ul class="tablist">
-                    <li class="categoryButton"><a class="all" href="">See All </a></li>
+                    <li class="categoryButton" data-id="0">See All</li>
                     @foreach (var item in Model.Categories.Take(5))
                     {
-                        <li class="categoryButton"><a class="popular" data-id="@item.Id" >@item.Name</a></li>
+                        <li class="categoryButton" data-id="@item.Id">@item.Name</li>
 
                     }
-
                 </ul>
             </div>
 
-            <div class="cards">
+            <div class="categoryCourseCardsWrapper cards">
                 @foreach (var item in Model.Courses)
                 {
                     <div class="card popular featuredCard" data-id="@item.CategoryId">
@@ -175,6 +174,8 @@
                                 <span><i class="fa-solid fa-star"></i>4.5 (44)</span>
                             </div>
                             <a href=""> @item.Description</a>
+                            <a href=""> @item.CategoryId</a>
+
                             <div class="teacher">
                                 <img src="https://ng-educal-by.netlify.app/assets/img/course/teacher/teacher-1.jpg"
                                      alt="">
